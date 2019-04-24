@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Sign In{% endblock %}
+
+{% block content %}
+	<div id="div_signin_form">
+		<h3 class="display-4 text-center">Sign In</h3>
+		<h5 class="text-muted text-right"> Just one step away from casting your vote! </h5>
+		<div class="container" style="margin-top:40px">
+			<form method="post" id="signin_form">
+				<div class ="mx-auto" style="width:50%">
+					{% csrf_token %}
+					
+					{{ form|crispy }}
+				</div>				
+			<div class="text-center btn-bottom">
+				<button type="submit" class="btn btn-lg btn-outline-dark font_mono">SIGN IN</button>
+			</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}

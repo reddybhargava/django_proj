@@ -1,0 +1,62 @@
+
+
+nav{
+	padding-right:10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+#div_signin_form, #div_signup_form{
+  margin: 2% 25% 80px 25%;
+  padding: 25px;
+  box-shadow: 0px 5px 25px  #000;
+  border-radius: 25px;
+}
+#signin_form input{
+	width:100% !important;
+}
+#signin_form .asteriskField{
+	display:none;
+}
+.bg-black{
+	background:#000;
+}
+.username{
+	display:inline;
+	color:#fff;
+	font-size:18pt;
+	font-family:monotype;
+}
+.form-check{
+	padding:0;
+}
+.font_mono{
+	font-family:"Courier New", Courier, monospace;
+}
+.btn-bottom{
+	margin-top: 30px;
+	padding-top: 30px;
+	/*margin-bottom: 60px;
+	padding-bottom: 60px;*/
+}
+.form_top{
+	padding-top: 40px;
+	padding-left: 15%
+}	
+footer{
+	display:inline-block;
+	width:100%;
+	color: #fff;
+	background: #000000;
+	padding: 1rem;
+	position:relative;
+    bottom:0;
+}
+input{
+	width:50% !important;
+}
+
+#hint_id_password1{
+	display:none;
+}

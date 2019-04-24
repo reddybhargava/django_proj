@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+	
+{% block content %}
+	<div class="banner-content1">
+                <h1><center>Cast your vote!</center></h1>
+                <h2><i><pre>        Because every vote matters...</pre></i></h2>
+    
+	<h1><center>Election Name : {{cands.election_name}}</center></h1>
+	<form action={% url 'vote' cands.id %} method="post">
+		{% csrf_token %}
+		
+		{% for choice in cands.choice_set.all %}
+		<div class="custom-radio">
+		<input type="radio" name="choice" id="choice{{forloop.counter}}" value="{{choice.id}}" style="width: 10% !important">
+		<label for="choice{{forloop.counter}}">{{choice.candidate}}</label><br>
+		</div>
+		{% endfor %}
+		<div id="submit_button"><input type="submit" id="submit_vote" class="btn1 black" value="VOTE!!" style="width: 100% !important"></div>
+		
+	</form>
+	</div>
+	
+{% endblock %}

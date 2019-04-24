@@ -1,0 +1,22 @@
+
+
+
+
+<html>
+<head>
+<title>index</title>
+</head>
+<body>
+<h1>{{cands.election_name}}</h1>
+<ul>
+	{% for choice in cands.choice_set.all %}
+	<li>{{choice.candidate}}--{{choice.cand_count}}</li>
+	{% endfor %}
+	
+	
+</ul>
+
+
+</body>
+
+</html>

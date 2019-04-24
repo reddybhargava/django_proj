@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Voting Results{% endblock %}
+		
+		
+   {% block content %}
+   {% if user.is_authenticated %}
+        <div id="bt" class="bg section">
+            	
+			</div class="container">
+				<h2 align="center">{{cands.election_name}}'s result: </h2></br>
+            <div class="table_box">
+                <table class=" tabel table-striped table-bordered" id ="results" align="center" style="font-size:30px;margin-bottom:300px">
+                    <th id="marge">Candidate Name &nbsp</th>
+                    <th id="marge"> Number of Votes</th><br/>
+					{% for choice in cands.choice_set.all %}
+						<tr>
+							<td align="center">{{choice.candidate}}</td>
+							<td align="center">{{choice.cand_count}}</td>
+						</tr>
+					{% endfor %}
+                </table>
+            </div>
+
+        </div>
+	{% else %}
+		<h1>Hi</h1>
+	{% endif %}
+	{% endblock %}
+    

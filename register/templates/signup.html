@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+	<div id="div_signup_form">
+		<h3 class="display-4 text-center">Sign Up</h3>
+		<h5 class="text-muted text-right"> Get ready to cast your vote! </h5>
+		<div>
+			<form method="post" id="signup_form">
+				<div class="form_top">
+					{% csrf_token %}
+
+					{{ forms|crispy }}
+				</div>
+			<div class="text-center btn-bottom">
+				<button type="submit" class="btn btn-lg btn-outline-dark font_mono">SIGN UP</button>
+			</div>
+			</form>
+		</div>
+	</div>
+	
+{% endblock %}

@@ -1,0 +1,60 @@
+
+{% extends 'base.html' %}
+{% load static %}
+        
+		{% block title %}Vote_index{% endblock %}
+        
+		
+		{% block content %}
+		<div class="banner-image">
+                <div class="container ">
+                    <div class="banner-content">
+                        <h1>Cast Your Votes</h1>
+                        <p> every vote counts</p>
+                        
+                    </div>
+                </div>
+        </div>
+		{% if user.is_authenticated %}
+    
+		<div class="container">
+			<h2 class="section-head">Elections Going On Right Now:</h2>
+			<br/>
+			{% if elections %}
+			{% for election in elections %}
+				<a href={% url "details" election.id %}>{{election.election_name}}</a><br>
+			{% endfor %}
+			{% endif %}
+		</div>
+		
+		{% else %}
+		<h1><center>You arent logged in</center></h1>
+		
+		{% endif %}
+		<section id="abt" class="section">
+            <div class="container">
+                <h2 class="section-head">ABOUT US</h2>
+                <h3>Voting now made simple!!!</h3>
+                <p class="lead">This is a online voting portal, where u can caste your vote as well as host an election all by yourself.
+                    Vote for your favorites sitting right at home.
+                    This year vote hassle free
+                </p>
+                
+            </div>
+        </section>
+		
+		<section id="htu" class="section">
+            <div class="container">
+                <h3>How To Use</h3>
+                <p class="lead">
+                    1)Create an account<br>
+                    2)Register as a voter or and Admin<br>
+                    3)Take part in yout favorite elections as voters<br>
+                    4)Host your own elections as an admin<br>
+                </p>
+            </div>
+            
+        </section>
+		{% endblock %}
+
+        

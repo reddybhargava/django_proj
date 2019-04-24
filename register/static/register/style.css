@@ -1,0 +1,119 @@
+.banner-image{
+    padding-top: 75px;
+ padding-bottom: 50px;
+ text-align: center;
+ color: #f8f8f8;
+ background: url(vote.jpg) no-repeat center center;
+ background-size: cover;
+ background-position: center;
+ height:100%;
+ width:100%;
+ overflow-y: hidden;
+}
+
+.banner-content{
+    position: relative;
+padding-top: 6%;
+ padding-bottom: 6%;
+ margin-top: 12%;
+ margin-bottom: 12%;
+ background-color: rgba(0, 0, 0, 0.7);
+ max-width: 660px;
+ margin-left: auto;
+ margin-right: auto; 
+}
+
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+ 
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #D3D3D3;
+
+    color: #000;
+    font-family: Arial;
+    font-size: 12px;
+	
+}
+
+
+
+img{
+width: 700px;
+height: 500px;
+}
+
+.container{
+max-width: 1180px;
+text-align: center;
+margin:0 auto;
+padding: 0 3rem;
+} 
+
+.lead{
+font-size: 1.3rem;
+}
+
+.section{
+padding:2rem 0;
+} 
+
+.section-head{
+font-size: 2.5rem;
+margin: 0;
+}
+
+
+
+.section h3{
+font-size: 2rem;
+}
+
+a{
+text-decoration: none;
+color: #000;
+font-size:25px;
+
+}
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
