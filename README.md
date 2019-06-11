@@ -1,3 +1,3 @@
 # django_proj
 
-This is a django based web application.
+This is a Django based web application.
